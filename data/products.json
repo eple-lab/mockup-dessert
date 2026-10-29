@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "딸기 생크림 케이크",
+    "price": 32000,
+    "category": "케이크",
+    "image": "/images/strawberry-cake.svg",
+    "soldOut": false,
+    "description": "매일 아침 들여온 국산 딸기와 동물성 생크림으로 만든 대표 케이크입니다. 촉촉한 바닐라 시트 사이에 딸기를 듬뿍 넣었어요.",
+    "createdAt": "2026-09-01T10:00:00.000Z",
+    "updatedAt": "2026-10-20T09:30:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "진한 초콜릿 가나슈 케이크",
+    "price": 35000,
+    "category": "케이크",
+    "image": "/images/chocolate-cake.svg",
+    "soldOut": true,
+    "description": "카카오 70% 다크 초콜릿 가나슈를 세 겹으로 쌓은 진한 맛의 케이크입니다.",
+    "createdAt": "2026-09-01T10:05:00.000Z",
+    "updatedAt": "2026-10-25T14:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "레몬 마들렌 (6개입)",
+    "price": 12000,
+    "category": "구움과자",
+    "image": "/images/madeleine.svg",
+    "soldOut": false,
+    "description": "레몬 제스트와 발효 버터로 구워 겉은 바삭하고 속은 촉촉한 마들렌입니다.",
+    "createdAt": "2026-09-05T11:00:00.000Z",
+    "updatedAt": "2026-09-05T11:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "버터 휘낭시에",
+    "price": 14000,
+    "category": "구움과자",
+    "image": "",
+    "soldOut": false,
+    "description": "태운 버터의 고소한 향과 아몬드 가루의 풍미가 살아 있는 휘낭시에 5개 세트입니다.",
+    "createdAt": "2026-09-10T13:20:00.000Z",
+    "updatedAt": "2026-10-02T08:15:00.000Z"
+  },
+  {
+    "id": 5,
+    "name": "바닐라 마카롱",
+    "price": 18000,
+    "category": "마카롱",
+    "image": "/images/macaron.svg",
+    "soldOut": true,
+    "description": "마다가스카르 바닐라빈을 넣은 버터크림을 채운 마카롱 6개 세트입니다.",
+    "createdAt": "2026-09-12T15:00:00.000Z",
+    "updatedAt": "2026-10-27T10:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "name": "말차 쿠키",
+    "price": 10000,
+    "category": "쿠키",
+    "image": "/images/cookie.svg",
+    "soldOut": false,
+    "description": "제주 말차와 화이트 초콜릿 청크를 넣어 쌉싸름하고 달콤한 쿠키 4개입니다.",
+    "createdAt": "2026-09-20T09:00:00.000Z",
+    "updatedAt": "2026-09-20T09:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "name": "제주 감귤 생크림과 상큼한 레몬 커드를 듬뿍 올린 시즌 한정 프리미엄 타르트",
+    "price": 28000,
+    "category": "타르트",
+    "image": "/images/tart.svg",
+    "soldOut": false,
+    "description": "바삭한 버터 타르트지 위에 레몬 커드와 감귤 생크림을 올린 가을 시즌 한정 타르트입니다.",
+    "createdAt": "2026-10-01T10:00:00.000Z",
+    "updatedAt": "2026-10-15T16:45:00.000Z"
+  },
+  {
+    "id": 8,
+    "name": "얼그레이 쿠키",
+    "price": 9000,
+    "category": "쿠키",
+    "image": "",
+    "soldOut": false,
+    "description": "얼그레이 찻잎을 곱게 갈아 넣어 은은한 홍차 향이 나는 버터 쿠키 4개입니다.",
+    "createdAt": "2026-10-10T12:00:00.000Z",
+    "updatedAt": "2026-10-10T12:00:00.000Z"
+  }
+]

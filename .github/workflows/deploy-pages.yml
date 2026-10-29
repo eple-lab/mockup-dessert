@@ -1,0 +1,55 @@
+# main 브랜치에 push하면 보기 전용 정적 사이트를 만들어 GitHub Pages에 배포합니다.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      # GitHub Pages에는 서버가 없어서 등록·수정·삭제 API를 빼고 빌드합니다.
+      - name: Remove server-only API routes
+        run: rm -rf src/app/api
+
+      - name: Build static site
+        run: npm run build
+        env:
+          NEXT_PUBLIC_STATIC_EXPORT: "true"
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+
+      - run: touch out/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
